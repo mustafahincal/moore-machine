@@ -1,10 +1,7 @@
 # Automata Moore Machine
 
-<br>
-
 ![](./readme_images/moore.png)
 
-<br>
 <br>
 <br>
 
