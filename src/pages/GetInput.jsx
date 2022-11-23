@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
-import { setInputString } from "./mooreMachine";
+import { setInputString } from "../moore/mooreMachine";
 import { useNavigate } from "react-router-dom";
 
 function GetInput({ input, setInput }) {

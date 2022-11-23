@@ -1,5 +1,5 @@
 import "./app.css";
-import Moore from "./pages/moore/Moore";
+import Moore from "./pages/Moore";
 
 function App() {
   return (

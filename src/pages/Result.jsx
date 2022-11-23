@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getResult } from "./mooreMachine";
+import { getResult } from "../moore/mooreMachine";
 import styles from "./styles.module.css";
 
 function Result() {

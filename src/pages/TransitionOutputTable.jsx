@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
-import { createTables } from "./mooreMachine";
+import { createTables } from "../moore/mooreMachine";
 import { useNavigate } from "react-router-dom";
 
 function TransitionOutputTable({
