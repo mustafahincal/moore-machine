@@ -53,17 +53,32 @@ function TransitionOutputTable({
 
   const onChangeStatesInput = (e, inputRoute) => {
     let updatedItem = {};
-    if (inputRoute === "a") {
-      updatedItem = {
-        a: e.target.value,
-        b: states[e.target.name]["b"],
-      };
-    } else {
-      updatedItem = {
-        a: states[e.target.name]["a"],
-        b: e.target.value,
-      };
-    }
+
+    alphabet.map((letter, index) => {
+      if (letter === inputRoute) {
+        updatedItem = {
+          ...updatedItem,
+          [letter]: e.target.value,
+        };
+      } else {
+        updatedItem = {
+          ...updatedItem,
+          [letter]: states[e.target.name][letter],
+        };
+      }
+    });
+
+    // if (inputRoute === "a") {
+    //   updatedItem = {
+    //     a: e.target.value,
+    //     b: states[e.target.name]["b"],
+    //   };
+    // } else {
+    //   updatedItem = {
+    //     a: states[e.target.name]["a"],
+    //     b: e.target.value,
+    //   };
+    // }
     setStates({ ...states, [e.target.name]: updatedItem });
   };
   const onChangeOutputsInput = (e) => {
